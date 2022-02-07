@@ -1,12 +1,15 @@
 #include <M5StickCPlus.h>
+#include "chargelib.h"
 
 M5StickCPlus chrg;
+
+
 
 
 float b, c = 0;
 int battery = 0;
 unsigned long chg_timenow = 0;
-int period_ms = 1000;
+
 
 
 int batteryLevel() 

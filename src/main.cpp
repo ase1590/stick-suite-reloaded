@@ -5,7 +5,7 @@
 #include <applications/temp.h>
 #include <applications/wifibeacon.h>
 #include <applications/irblaster.h>
-#include <applications/chargelib.h>
+#include <chargelib.h>
 #include <BleKeyboard.h>
 #define win_grey 0xC67A
 

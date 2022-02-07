@@ -1,5 +1,6 @@
 
 #include <M5StickCPlus.h>
+//#include <applications/chargelib.h>
 #include "freertos/FreeRTOS.h"
 #include "esp_event_loop.h"
 #include "esp_system.h"
@@ -12,7 +13,6 @@
 TaskHandle_t TaskHandle_1;
 
 bool setup_wifispam_complete = false;
-
 
 
 
@@ -197,6 +197,7 @@ void loop_wifispam()
 	while(setup_wifispam_complete == true)
 	{
 		//Serial.println(vTaskGetRunTimeStats());
+		//ChargeCheck(175,115,BLACK);
 		if(digitalRead(M5_BUTTON_RST) == LOW)
 		{
 			vTaskDelete(TaskHandle_1);
